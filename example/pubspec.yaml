@@ -1,0 +1,17 @@
+name: error_tracker_example
+description: Example app demonstrating the error_tracker package.
+publish_to: none
+version: 1.0.0+12
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  error_tracker:
+    path: ../
+
+flutter:
+  uses-material-design: true

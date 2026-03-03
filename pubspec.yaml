@@ -1,0 +1,31 @@
+name: error_tracker
+description: >
+  Production-ready Flutter error tracking package with automatic capture,
+  breadcrumbs, session tracking, issue fingerprinting, offline queue,
+  and Custom REST API reporting. Zero Firebase dependency.
+version: 2.0.0
+homepage: https://github.com/yourorg/error_tracker
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Device context
+  device_info_plus: ^10.1.0
+  connectivity_plus: ^6.0.3
+  battery_plus: ^6.0.1
+  # Offline queue persistence (pure Flutter, no Firebase)
+  shared_preferences: ^2.3.3
+  # HTTP client (dart:io HttpClient used directly — no extra dep needed)
+  # Unique report IDs
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.9
